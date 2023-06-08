@@ -13,8 +13,8 @@ jobs:
            with: 
                aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
                aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
-               aws-region: us-east-2
+               aws-region: us-east-1
                
            -name: Push to AWS s3 Bucket
-             run: aws s3 sync . s3://your bucket name
+             run: aws s3 sync . s3://last-bucket-12
          

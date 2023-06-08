@@ -5,7 +5,7 @@ on: [push]
 jobs:
     deploy-to-s3:
         runs-on: ubuntu-latest 
-        steps:
+        - steps:
            - name: Checkout Repositry Code 
              uses: actions/checkout@v3
            

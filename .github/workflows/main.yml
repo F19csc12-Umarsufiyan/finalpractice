@@ -1,10 +1,11 @@
 name: static website hosting to s3 bucket 
+
 on: [push] 
 
 jobs:
     deploy-to-s3:
-       runs-on: ubuntu-latest 
-       steps:
+        runs-on: ubuntu-latest 
+        steps:
            - name: Checkout Repositry Code 
              uses: actions/checkout@v3
            
